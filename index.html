@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Drill #2: Arithmetic Operations</title>
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.4/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.2.4/core.js"> </script>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+
+        <h1> Calculator with Arithmetic Operations </h1>
+
+        <div class="container">
+            <h2> Arithmetic Operations Functionality </h2> 
+
+            <h3> Addition (+) </h3>
+            <p> Adds two numbers together </p>
+
+            <h3> Subtraction (-) </h3>
+            <p> Subtracts the second number from the first number </p> 
+
+            <h3> Multiplication (x) </h3>
+            <p> Multiplies two numbers together </p> 
+
+            <h3> Division (/) </h3>
+            <p> Divides the first number by the second number </p> 
+
+            <h3> Modulus (%) </h3>
+            <p> Divides two numbers and returns the remainder </p> 
+
+        </div>
+
+        <br> 
+
+        <h2> Input two numbers and select an operation</h2>
+
+        <div class="group">
+            <div class="pair">
+                <label for="num1">1st Number:</label>
+                <input type="number" id="num1">
+            </div>
+
+            <div class="pair">
+                <label for="num2">2nd Number:</label>
+                <input type="number" id="num2">
+                <br><br>
+            </div>
+        </div>
+
+        <label>Select Operation:</label>
+        <select id="operation">
+            <option value="+">Add (+) </option>
+            <option value="-">Subtract (-)</option>
+            <option value="x">Multiply (x)</option>
+            <option value="/">Divide (/)</option>
+            <option value="%">Modulus (%)</option>
+        </select> <br>
+
+        <button py-click="compute">COMPUTE</button> 
+        
+        <br><br>
+
+        <div id="result">
+            Result
+        </div>
+
+        <script type="py" src="./main.py"></script>
+
+    </body>
+</html>
